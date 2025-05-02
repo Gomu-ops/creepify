@@ -1,0 +1,33 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Creepster', cursive;
+}
+
+.overlay {
+  background: url('background.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+.content p {
+  font-size: 1.5em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+}
