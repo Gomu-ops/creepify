@@ -10,8 +10,9 @@ body, html {
   height: 100%;
   width: 100%;
   background: url('assets/bg.jpg') no-repeat center center/cover;
-  font-family: 'Cinzel Decorative', serif;
+  font-family: 'UnifrakturCook', cursive;
   overflow: hidden;
+  position: relative;
 }
 
 .overlay {
@@ -20,26 +21,30 @@ body, html {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.35);
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7));
+  z-index: 1;
 }
 
 .title {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 2;
   transform: translate(-50%, -50%);
-  color: #f5f5f5;
-  font-size: 4.5vw;
+  color: #ffddb3;
+  font-size: 5vw;
   text-align: center;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2),
-               0 0 30px rgba(255, 140, 0, 0.4),
-               2px 2px 8px rgba(0, 0, 0, 0.8);
-  letter-spacing: 4px;
+  letter-spacing: 3px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #ffccaa,
+    0 0 20px #ffccaa,
+    2px 2px 10px rgba(0,0,0,0.6);
 }
 
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 8vw;
-    padding: 0 10px;
+    font-size: 9vw;
+    padding: 0 15px;
   }
 }
